@@ -2,7 +2,9 @@
 *.o
 *.iml
 *.zip
+**/tempCodeRunnerFile.py
 .vscode/
 .idea/
 out/
 venv/
+__pycache__/
