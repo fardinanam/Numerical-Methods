@@ -1,6 +1,8 @@
 *.exe
 *.o
-/.vscode
-/.idea
-/venv
-/__pycache__
+*.iml
+*.zip
+.vscode/
+.idea/
+out/
+venv/
