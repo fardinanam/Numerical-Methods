@@ -82,17 +82,19 @@ def table(xl, xu, Es):
     data = pd.DataFrame({'Absolute Relative Approx. Errors': s})
     print(data)
 
-print(f"The root of the function is {findRootByBisection(-1, .9, 0.05, 10000)}")
-table(-1, 0.9, 0.05)
 
-fig, ax = plt.subplots()
+if __name__ == "__main__":
+    print(f"The root of the function is {findRootByBisection(-1, .9, 0.05, 10000)}")
+    table(-1, 0.9, 0.05)
 
-t1 = np.arange(-1.9,1, 0.1)
-t2 = np.arange(1.1,5,0.1)
+    fig, ax = plt.subplots()
 
-ax.axhline(y=0, color='k')
-ax.axvline(x=0, color='k')
+    t1 = np.arange(-1.9,1, 0.1)
+    t2 = np.arange(1.1,5,0.1)
 
-plt.plot(t1,fAll(t1))
-plt.plot(t2, fAll(t2))
-plt.show()
+    ax.axhline(y=0, color='k')
+    ax.axvline(x=0, color='k')
+
+    plt.plot(t1,fAll(t1))
+    plt.plot(t2, fAll(t2))
+    plt.show()

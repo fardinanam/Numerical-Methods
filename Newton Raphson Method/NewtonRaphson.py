@@ -40,15 +40,16 @@ def findRootByNewtonRaphsonMethod(initialGuessX, relativeErrorTolerance, maxNumb
 
     return "No root found. Max number of iterations reached."
 
-print(findRootByNewtonRaphsonMethod(0.05, 0.05, 3))
+if __name__ == "__main__":
+    print(findRootByNewtonRaphsonMethod(0.05, 0.05, 3))
 
-x = np.arange(0, 0.1, 0.005)
-y = f(x)
+    x = np.arange(0, 0.1, 0.005)
+    y = f(x)
 
-fig, ax = plt.subplots()
+    fig, ax = plt.subplots()
 
-ax.axhline(y=0, color='k')
-ax.axvline(x=0, color='k')
+    ax.axhline(y=0, color='k')
+    ax.axvline(x=0, color='k')
 
-plt.plot(x, y)
-plt.show()
+    plt.plot(x, y)
+    plt.show()

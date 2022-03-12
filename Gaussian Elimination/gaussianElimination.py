@@ -33,7 +33,7 @@ def gaussianElimination(A, B, d):
         print("%.4f" % (x[i]))
 
 
-def run():
+if __name__ == "__main__":
     n = int(input())
     A = []
 
@@ -50,5 +50,3 @@ def run():
 
     B = np.array(b)
     gaussianElimination(A, B, True)
-
-run()
